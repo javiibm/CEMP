@@ -1,35 +1,41 @@
-
-.col1{
+.col1 {
     background-color: #005E90;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-ul{
+
+ul {
     list-style: none;
     background-color: #005E90;
 }
-ul li{
+
+ul li {
     display: inline-block;
     position: relative;
-    
+
 
 }
-ul li a{
+
+ul li a {
     display: block;
     padding: 20px 25px;
     background: #005E90;
-    color: #fff;;
+    color: #fff;
+    ;
     text-align: center;
     text-decoration: none;
 }
+
 ul li ul.dropdown li {
     display: block;
     text-align: center;
     margin-left: -30px;
 }
-ul li ul.dropdown{
+
+ul li ul.dropdown {
     width: 100%;
     background: #005E90;
     z-index: 999;
@@ -37,39 +43,61 @@ ul li ul.dropdown{
     display: none;
     text-align: center;
 }
+
 ul li ul.dropdown li a {
     display: block;
-    padding: 20px 0; /* Ajusta el espacio vertical */
+    padding: 20px 0;
+    /* Ajusta el espacio vertical */
     color: #fff;
 }
-ul li a:hover{
+
+ul li a:hover {
     background: #005E90;
 }
-ul li:hover ul.dropdown{
+
+ul li:hover ul.dropdown {
     display: block;
 }
 
-.img1{
+.img1 {
     display: block;
     margin-top: 6%;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
 }
-footer{
+
+footer {
     position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #005E90;
-  color: white;
-  text-align: center;
-  min-height: 80px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #005E90;
+    color: white;
+    text-align: center;
+    min-height: 80px;
+    padding-top: 80px;
 }
-.img2{
+
+.img2 {
     max-width: 100px;
     display: block;
     margin-left: 30px;
 }
 
+.imgp {
+    height: 100px;
+    width: 100px;
+}
 
+h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+h6 {
+    padding-top: 20px;
+}
+.extra-bottom-padding{
+    padding-bottom: 150px;
+}

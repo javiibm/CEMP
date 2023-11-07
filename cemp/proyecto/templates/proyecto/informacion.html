@@ -1,14 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure sunt maiores optio sequi, numquam quisquam, illo tenetur vitae veniam, cum assumenda cupiditate facere a quos amet laborum explicabo laudantium.
-    Officia ab similique eius odit dolorum est veniam eaque sed illo repellat a fugit, quam fugiat mollitia praesentium reprehenderit sunt quibusdam enim obcaecati necessitatibus, assumenda, asperiores libero alias perspiciatis. Architecto.
-    Unde explicabo non dolorum accusamus dolor expedita, incidunt obcaecati soluta harum consequuntur, praesentium nesciunt fuga pariatur ullam rem! Eos quod ullam nostrum tempora laborum perspiciatis velit expedita animi impedit necessitatibus.</p>
+{% extends "proyecto\home.html" %}
 
-</body>
-</html>
+{% block title %}Información{% endblock %}
+{% block content %}
+<br>
+<h2>Información de los perrunos</h2>
+<div class="col-6 col4 ">
+    <h6>Muñeca</h6>
+    <p>Es extremandamente cariñosa, puedes hacerle cariño sin problema.
+        <br>Es senior, de edad avanzada.
+        <br>Sobrevivio a dos tumores, ¡es una guerrera!
+    </p>
+    <img src="/static/proyecto/img/muneca.png">
+</div>
+<div class="col-6 col6 ">
+    <h6>Perla</h6>
+<p>Es muy timida cuando ve a muchas personas juntas, se asusta con mucha facilidad y ladra.
+    <br>Debes acercarte despacio a ella, con mucha calma y llamarla por su nombre para darle confianza.
+</p>
+    <img src="/static/proyecto/img/perla.png">
+</div>
+<div class="col-6 col8 ">
+    <h6>Lucas</h6>
+    <p>Es muy cariñoso y extremadamente tranquilo.
+        <br>Es muy fial cuando te reconoce como un humano cercano.
+        <br>Son mejores amigos con el perruno Vaca.
+    </p>
+    <img src="/static/proyecto/img/lucass.png">
+</div>
+<div class="col-6 col10 ">
+    <h6>Juana</h6>
+<p>Es dulce y cariñosa, le encanta recibir cariño y pasar tiempo con los humanos.
+    <br>Es senior, muy viejita.
+</p>
+    <img src="/static/proyecto/img/juana.png">
+</div>
+<div class="col-6 col12">
+    <h6>Godzilla</h6>
+    <p>Es tranquilo y cariñosa, tambien muy perezoso (no lograras levantarlo sin comida)
+        <br>Grande y obeso, mete su hocico en los basureros.
+    </p>
+    <img class="extra-bottom-padding" src="/static/proyecto/img/godzilla.png">
+</div>
+{% endblock %}

@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
+    {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'proyecto/estilo.css' %}">
-    <title>CEMP</title>
+    <title>{% block title %}{% endblock %}CEMP</title>
+    {% endblock %}
 </head>
 
 <body>
+
     <div class="container-fluid">
+
         <div class="row">
             <div class="col-12 col1 ">
                 <nav class="navbar">
                     <div class="logo">
-                        <img class="img2" src="static\proyecto\img\logousm.png">
+                        <img class="img2" src="\static\proyecto\img\logousm.png">
                     </div>
+                    
                     <ul class="links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="menu"> Menu  </a>
+                        <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                        <li><a href="#" class="menu"> Menu </a>
                             <ul class="dropdown">
-                                <li><a href="adopcion">Adopción</a></li>
-                                <li><a href="informacion">Información</a></li>
+                                <li><a href="http://127.0.0.1:8000/adopcion/">Adopción</a></li>
+                                <li><a href="http://127.0.0.1:8000/informacion/">Información</a></li>
                             </ul>
                         </li>
                     </ul>
-
             </div>
+            {% block content %}
+
             <div class="col-12 col2">
                 <img class="img1" src="static\proyecto\img\logo cemp.jpg">
-
             </div>
+            {% endblock %}
             <div class="col-12 col3">
                 <footer>
                     <p> </p>
@@ -44,6 +50,7 @@
         </div>
     </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
